@@ -1,0 +1,12 @@
+C:\Users\luiz.martinho\OneDrive - Waldyr Lima Editora Ltda\Documentos\Estudo\.NET\ChatBotMVC\Entidades\bin\Debug\net8.0\Entidades.deps.json
+C:\Users\luiz.martinho\OneDrive - Waldyr Lima Editora Ltda\Documentos\Estudo\.NET\ChatBotMVC\Entidades\bin\Debug\net8.0\Entidades.dll
+C:\Users\luiz.martinho\OneDrive - Waldyr Lima Editora Ltda\Documentos\Estudo\.NET\ChatBotMVC\Entidades\bin\Debug\net8.0\Entidades.pdb
+C:\Users\luiz.martinho\OneDrive - Waldyr Lima Editora Ltda\Documentos\Estudo\.NET\ChatBotMVC\Entidades\obj\Debug\net8.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luiz.martinho\OneDrive - Waldyr Lima Editora Ltda\Documentos\Estudo\.NET\ChatBotMVC\Entidades\obj\Debug\net8.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\luiz.martinho\OneDrive - Waldyr Lima Editora Ltda\Documentos\Estudo\.NET\ChatBotMVC\Entidades\obj\Debug\net8.0\Entidades.AssemblyInfo.cs
+C:\Users\luiz.martinho\OneDrive - Waldyr Lima Editora Ltda\Documentos\Estudo\.NET\ChatBotMVC\Entidades\obj\Debug\net8.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\luiz.martinho\OneDrive - Waldyr Lima Editora Ltda\Documentos\Estudo\.NET\ChatBotMVC\Entidades\obj\Debug\net8.0\Entidades.sourcelink.json
+C:\Users\luiz.martinho\OneDrive - Waldyr Lima Editora Ltda\Documentos\Estudo\.NET\ChatBotMVC\Entidades\obj\Debug\net8.0\Entidades.dll
+C:\Users\luiz.martinho\OneDrive - Waldyr Lima Editora Ltda\Documentos\Estudo\.NET\ChatBotMVC\Entidades\obj\Debug\net8.0\refint\Entidades.dll
+C:\Users\luiz.martinho\OneDrive - Waldyr Lima Editora Ltda\Documentos\Estudo\.NET\ChatBotMVC\Entidades\obj\Debug\net8.0\Entidades.pdb
+C:\Users\luiz.martinho\OneDrive - Waldyr Lima Editora Ltda\Documentos\Estudo\.NET\ChatBotMVC\Entidades\obj\Debug\net8.0\ref\Entidades.dll

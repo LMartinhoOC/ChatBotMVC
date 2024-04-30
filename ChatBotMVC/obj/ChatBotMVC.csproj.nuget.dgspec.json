@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\Projetos\\.NET\\OpenAI\\ChatBotMVC\\ChatBotMVC\\ChatBotMVC.csproj": {}
+    "C:\\Users\\luiz.martinho\\OneDrive - Waldyr Lima Editora Ltda\\Documentos\\Estudo\\.NET\\ChatBotMVC\\ChatBotMVC\\ChatBotMVC.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\Projetos\\.NET\\OpenAI\\ChatBotMVC\\ChatBotMVC\\ChatBotMVC.csproj": {
+    "C:\\Users\\luiz.martinho\\OneDrive - Waldyr Lima Editora Ltda\\Documentos\\Estudo\\.NET\\ChatBotMVC\\ChatBotMVC\\ChatBotMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Projetos\\.NET\\OpenAI\\ChatBotMVC\\ChatBotMVC\\ChatBotMVC.csproj",
+        "projectUniqueName": "C:\\Users\\luiz.martinho\\OneDrive - Waldyr Lima Editora Ltda\\Documentos\\Estudo\\.NET\\ChatBotMVC\\ChatBotMVC\\ChatBotMVC.csproj",
         "projectName": "ChatBotMVC",
-        "projectPath": "D:\\Documentos\\Projetos\\.NET\\OpenAI\\ChatBotMVC\\ChatBotMVC\\ChatBotMVC.csproj",
-        "packagesPath": "C:\\Users\\dudud\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Projetos\\.NET\\OpenAI\\ChatBotMVC\\ChatBotMVC\\obj\\",
+        "projectPath": "C:\\Users\\luiz.martinho\\OneDrive - Waldyr Lima Editora Ltda\\Documentos\\Estudo\\.NET\\ChatBotMVC\\ChatBotMVC\\ChatBotMVC.csproj",
+        "packagesPath": "C:\\Users\\luiz.martinho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luiz.martinho\\OneDrive - Waldyr Lima Editora Ltda\\Documentos\\Estudo\\.NET\\ChatBotMVC\\ChatBotMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dudud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luiz.martinho\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +44,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

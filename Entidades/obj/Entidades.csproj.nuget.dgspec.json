@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\Projetos\\.NET\\OpenAI\\ChatBotMVC\\Entidades\\Entidades.csproj": {}
+    "C:\\Users\\luiz.martinho\\OneDrive - Waldyr Lima Editora Ltda\\Documentos\\Estudo\\.NET\\ChatBotMVC\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\Projetos\\.NET\\OpenAI\\ChatBotMVC\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\luiz.martinho\\OneDrive - Waldyr Lima Editora Ltda\\Documentos\\Estudo\\.NET\\ChatBotMVC\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Projetos\\.NET\\OpenAI\\ChatBotMVC\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\luiz.martinho\\OneDrive - Waldyr Lima Editora Ltda\\Documentos\\Estudo\\.NET\\ChatBotMVC\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "D:\\Documentos\\Projetos\\.NET\\OpenAI\\ChatBotMVC\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\dudud\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Projetos\\.NET\\OpenAI\\ChatBotMVC\\Entidades\\obj\\",
+        "projectPath": "C:\\Users\\luiz.martinho\\OneDrive - Waldyr Lima Editora Ltda\\Documentos\\Estudo\\.NET\\ChatBotMVC\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\luiz.martinho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luiz.martinho\\OneDrive - Waldyr Lima Editora Ltda\\Documentos\\Estudo\\.NET\\ChatBotMVC\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dudud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luiz.martinho\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

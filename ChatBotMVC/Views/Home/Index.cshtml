@@ -1,4 +1,6 @@
-﻿@{
+﻿@model ChatBotMVC.Models.ChaveAPIViewModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -17,37 +19,28 @@
                 <a href="https://platform.openai.com/docs/api-reference">https://platform.openai.com/docs/api-reference</a>.
             </p>
             <p>Caso possua uma API Key, insira-a no campo abaixo, para poder fazer as chamadas ao ChatBot:</p>
+            <form asp-action="ValidarChaveApi" id="form-chave-api"><!-- CAMPO PREENCHIMENTO API -->
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <div class="input-group" id="AddKey">
-                <input asp-for="apiKey" type="text" id="ApiSecretKey" autocomplete="false" name="hidden" class="form-control" placeholder="Digite sua API Secret Key" aria-label="Digite sua API Secret Key">
-                <span asp-validation-for="apiKey" class="text-danger" style="margin-top: 5px"></span>
-                <button class="btn btn-primary" onclick="SetApikey">Confirmar</button>
-            </div>
+                <div class="input-group" id="AddKey">
+                    <input asp-for="ChaveAPI" autocomplete="one-time-code" class="form-control" placeholder="Digite sua API Secret Key">
+                    <span asp-validation-for="ChaveAPI" class="text-danger" style="margin-top: 5px"></span>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                </div>
+            </form>
+            
         </div>
         <div class="col-6 bg-light">
-            <div class="messages">
+            <div class="messages"> <!-- JANELA DE MENSAGENS -->
                 <div class="question">
-                    The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent arcu libero, convallis vitae vestibulum a, dignissim vel ex. Ut quis aliquam mi.
                 </div>
                 <div class="response">
-                    The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog
+                    Curabitur urna leo, varius eu leo eget, vehicula bibendum nisi. Phasellus dignissim consequat enim, nec semper dui aliquam id.
                 </div>
-
-                @for (int i = 0; i < mensagens.Count; i++)
-                {
-                    @if (i % 2 == 0)
-                    {
-                        <div class="question">@mensagem[i]</div>
-                    }
-                    else
-                    {
-                        <div class="response">@mensagem[i]</div>
-                    }
-                }
-
             </div>
             <div class="input-group">
-                <input asp-for="mensagem" type="text" class="form-control" placeholder="Digite uma mensagem" autocomplete="off">
+                <inpu type="text" class="form-control" placeholder="Digite uma mensagem" autocomplete="off">
                 <button class="btn btn-primary" onclick="SendMessage">Enviar</button>
             </div>
             <div class="col-2"></div>
@@ -62,104 +55,3 @@
         $(`#carregando`).show();
     };
 </script>
-
-@code {
-    public string message;
-    public string testing;
-    public List<string>
-    messages = new List<string>
-        ();
-        public List<Message>
-            mensagens = new List<Message>
-                ();
-                private static HttpClient Http = new HttpClient();
-                const string BaseUrl = "https://api.openai.com/v1/chat/completions";
-                private string apiKey = "";
-                public string ErrorMessage = "";
-                bool isShow { get; set; }
-
-                protected override async Task OnInitializedAsync()
-                {
-
-                }
-
-                public async Task SendMessage()
-                {
-                try
-                {
-                Http = new HttpClient();
-                Http.BaseAddress = new Uri(BaseUrl);
-                messages.Add(message);
-
-                // Seta a API KEY de acordo com a necessidade. Você precisaria da sua própria API KEY
-
-                // Seta a API KEY
-                Http.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}");
-
-                // Conteúdo JSON para a chamada
-                string jsonContent = JsonConvert.SerializeObject(new
-                {
-                model = "gpt-3.5-turbo",
-                messages = new[]
-                {
-                new {role = "user", content = $"{message}"}
-                },
-                });
-
-                message = null; //Apaga o que foi preenchido no campo da mensagem após o envio
-
-                var body = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
-
-                // Faz o POST pra API, passando o JSON serializado
-                var response = await Http.PostAsync("", body);
-
-                // Recebe a resposta
-                var resContext = await response.Content.ReadAsStringAsync();
-
-                // Desserializa o JSON da resposta
-                var data = JsonConvert.DeserializeObject<dynamic>
-                    (resContext);
-
-                    if (response.IsSuccessStatusCode)
-                    {
-                    Message mensagem = new Message();
-                    {
-                    mensagem.Id = data.id;
-                    mensagem.Created = DateTime.Now;
-                    mensagem.Content = data.choices[0].message.content;
-                    mensagem.Total_tokens = data.usage.total_tokens;
-                    }
-
-                    messages.Add(mensagem.Content); //Insere a resposta na tela usando a string do objeto Mensagem
-                    Console.WriteLine(mensagem.ToString());
-                    ErrorMessage = "";
-                    isShow = false;
-                    StateHasChanged();
-
-                    }
-                    else
-                    {
-                    isShow = true;
-                    Console.WriteLine($"Erro da API: {data.error.message}");
-                    ErrorMessage = data.error.message;
-                    StateHasChanged();
-                    }
-                    }
-                    catch(Exception e)
-                    {
-                    Console.WriteLine(e.Message);
-                    }
-
-                    }
-
-                    private async Task SetApikey()
-                    {
-                    apiKey = apiKey;
-                    }
-
-                    private async Task ChangeApiKey()
-                    {
-                    apiKey = "";
-                    StateHasChanged();
-                    }
-                    }
